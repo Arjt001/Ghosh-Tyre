@@ -9,7 +9,6 @@ import {
   Info,
   Mail,
   Menu,
-  MessageCircle,
   Package,
   Phone,
   Search,
@@ -20,12 +19,12 @@ import {
 } from 'lucide-react';
 import { BUSINESS_INFO } from '../data/initialData';
 import { useStore } from '../context/StoreContext';
-import { getWhatsAppUrl } from '../utils/whatsapp';
 import { Dock, DockIcon, DockItem, DockLabel } from './ui/dock';
+import { BookCallButton } from './ui/book-a-call-button';
 import { cn } from '../lib/utils';
 
 export const Navbar: React.FC = () => {
-  const { cart, categories } = useStore();
+  const { cart, categories, openServiceEnquiryModal } = useStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
@@ -231,27 +230,12 @@ export const Navbar: React.FC = () => {
             <Search className="w-4 h-4" />
           </button>
 
-          {/* WhatsApp Button */}
-          <a
-            href={getWhatsAppUrl(
-              'Hello Ghosh Tyre Zone, I would like to enquire about tyres, batteries and automotive services.'
-            )}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hidden md:flex items-center gap-1.5 px-3 py-2 rounded-lg bg-[#16A34A] hover:bg-[#15803D] text-white text-xs font-semibold transition-colors whitespace-nowrap shrink-0"
-          >
-            <MessageCircle className="w-4 h-4" />
-            <span>WhatsApp</span>
-          </a>
-
-          {/* Phone Number */}
-          <a
-            href={`tel:${BUSINESS_INFO.phoneRaw}`}
-            className="hidden xl:flex items-center gap-1.5 text-sm font-display font-bold tracking-wide text-[#F10D17] hover:text-white transition-colors whitespace-nowrap shrink-0"
-          >
-            <Phone className="w-4 h-4 fill-current" />
-            <span className="font-mono-num">{BUSINESS_INFO.phoneDisplay}</span>
-          </a>
+          {/* Call Section: Animated Book A Call Button */}
+          <div className="hidden sm:flex items-center shrink-0">
+            <BookCallButton
+              onClick={() => openServiceEnquiryModal('Book a Consultation Call with Ghosh Tyre Zone')}
+            />
+          </div>
 
           {/* Mobile Menu Button */}
           <button

@@ -307,7 +307,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     availability: 'In Stock',
     featured: true,
     isBestseller: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_2cbfe822.png'],
     visualType: 'tyre-car',
     tyreSpecs: {
       width: '195',
@@ -344,7 +344,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_7e716995.png'],
     visualType: 'tyre-car',
     tyreSpecs: {
       width: '185',
@@ -379,7 +379,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_ee93d504.png'],
     visualType: 'tyre-suv',
     tyreSpecs: {
       width: '215',
@@ -414,7 +414,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: false,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_5b1e3202.png'],
     visualType: 'tyre-moto',
     tyreSpecs: {
       width: '100',
@@ -448,7 +448,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: false,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_3e0e705f.png'],
     visualType: 'tyre-truck',
     tyreSpecs: {
       width: '165',
@@ -482,7 +482,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: false,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_ce1587b8.png'],
     visualType: 'tyre-car',
     tyreSpecs: {
       width: '185',
@@ -516,7 +516,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: false,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_4d9b69d2.png'],
     visualType: 'tyre-suv',
     tyreSpecs: {
       width: '235',
@@ -553,7 +553,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     availability: 'In Stock',
     featured: true,
     isBestseller: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/PngItem_3582603_0aeb6400.png'],
     visualType: 'battery-car',
     specifications: {
       'Battery Type': 'Zero-Maintenance Lead-Acid Automotive Battery',
