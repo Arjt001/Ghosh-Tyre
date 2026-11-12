@@ -57,7 +57,7 @@ const PRIMARY_OPERATIONS = [
 ];
 
 const BRAND_CARD_IMAGES: Record<string, string> = {
-  Michelin: '/assets/aistudio/image_2cbfe822.png',
+  Michelin: '/assets/aistudio/image_86fa9fc9.png',
   Bridgestone: '/assets/aistudio/image_7e716995.png',
   Goodyear: '/assets/aistudio/image_ce1587b8.png',
   Apollo: '/assets/aistudio/image_ee93d504.png',

@@ -22,22 +22,29 @@ export const ProductArtwork: React.FC<ProductArtworkProps> = ({
 }) => {
   const [imgError, setImgError] = useState(false);
 
-  // If the admin added a custom uploaded URL (not one of the default composite banners) or user is viewing secondary gallery photo
-  const isCustomUpload =
-    customImage &&
-    !customImage.includes('/assets/aistudio/image_f3b889b3.png') &&
-    !customImage.includes('/assets/aistudio/image_6aa2fd52.png') &&
-    !customImage.includes('/assets/aistudio/image_8a83cfc1.png');
+  // Resolve image from product custom images
+  const resolvedImage = customImage;
 
-  if ((isCustomUpload || viewIndex === 2) && customImage && !imgError) {
+  // If the product has a custom uploaded URL or user is viewing secondary gallery photo
+  const isCustomUpload =
+    Boolean(resolvedImage) &&
+    !resolvedImage?.includes('/assets/aistudio/image_f3b889b3.png') &&
+    !resolvedImage?.includes('/assets/aistudio/image_6aa2fd52.png') &&
+    !resolvedImage?.includes('/assets/aistudio/image_8a83cfc1.png');
+
+  if ((isCustomUpload || viewIndex === 2) && resolvedImage && !imgError) {
     return (
-      <div className={`relative overflow-hidden bg-[#DCDFE6] flex items-center justify-center ${className}`}>
+      <div className={`relative overflow-hidden bg-white flex items-center justify-center ${className}`}>
         <img
-          src={customImage}
+          src={resolvedImage}
           alt={name || 'Ghosh Tyre Zone Product'}
           referrerPolicy="no-referrer"
           onError={() => setImgError(true)}
-          className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+          className={`w-full h-full object-contain p-2.5 transition-all duration-300 group-hover:scale-105 ${
+            variant === 'card'
+              ? 'opacity-50 group-hover:opacity-100 hover:opacity-100'
+              : 'opacity-100'
+          }`}
         />
       </div>
     );

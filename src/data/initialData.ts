@@ -222,7 +222,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     availability: 'In Stock',
     featured: true,
     isBestseller: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_63401aa2.png'],
     visualType: 'speaker',
     specifications: {
       'Speaker Type': '6.5" (16.5 cm) 2-Way Coaxial',
@@ -251,7 +251,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     availability: 'In Stock',
     featured: true,
     isBestseller: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_1872f56b.png'],
     visualType: 'video-system',
     specifications: {
       'Display Size': '9-Inch Capacitive IPS Touch Display',
@@ -279,7 +279,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     price: null,
     availability: 'In Stock',
     featured: true,
-    images: ['/assets/aistudio/image_f3b889b3.png'],
+    images: ['/assets/aistudio/image_eba038a5.png'],
     visualType: 'speaker',
     specifications: {
       'Configuration': '2-Way Component (Mid-Bass + Tweeters + Crossovers)',
@@ -307,7 +307,7 @@ export const INITIAL_PRODUCTS: Product[] = [
     availability: 'In Stock',
     featured: true,
     isBestseller: true,
-    images: ['/assets/aistudio/image_2cbfe822.png'],
+    images: ['/assets/aistudio/image_86fa9fc9.png'],
     visualType: 'tyre-car',
     tyreSpecs: {
       width: '195',
